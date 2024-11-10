@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Recipe Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">Random Recipe Generator</h1>
+        
+        <div class="flex justify-center space-x-4 mb-6">
+            <button id="breakfast" class="px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white rounded-md">Breakfast</button>
+            <button id="lunch" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-md">Lunch</button>
+            <button id="dinner" class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-md">Dinner</button>
+            <button id="side" class="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-md">Side-dish</button>
+            <button id="dessert" class="px-4 py-2 bg-pink-500 hover:bg-pink-600 text-white rounded-md">Dessert</button>
+            <button id="snack" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-md">Snack</button>
+            <button id="surprise" class="px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-md">Surprise Me</button>
+        </div>
+        
+        <div id="recipe" class="bg-white p-6 rounded-lg shadow-md">
+            <h2 id="recipe-title" class="text-2xl font-semibold mb-4 text-gray-800"></h2>
+            <img id="recipe-image" class="w-full h-64 object-cover rounded-md mb-4" src="" alt="Recipe Image">
+            <h3 class="font-semibold text-gray-700">Ingredients:</h3>
+            <ul id="recipe-ingredients" class="list-disc pl-6 mb-4 text-gray-700"></ul>
+            <h3 class="font-semibold text-gray-700">Instructions:</h3>
+            <p id="recipe-instructions" class="text-gray-700"></p>
+        </div>
+    </div>
+
+    <script src="genrator.js"></script>
+</body>
+</html>
