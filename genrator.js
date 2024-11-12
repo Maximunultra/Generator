@@ -68,14 +68,14 @@ const recipes = {
   ]
 };
 
-// Function to generate a random recipe based on the selected category
+// generate random recipe once you cllick category
 function getRandomRecipe(category) {
   const categoryRecipes = recipes[category];
   const randomIndex = Math.floor(Math.random() * categoryRecipes.length);
   return categoryRecipes[randomIndex];
 }
 
-// Function to update the UI with recipe details
+ //para ma update ui
 function displayRecipe(recipe) {
   document.getElementById("recipe-title").textContent = recipe.title;
   document.getElementById("recipe-image").src = recipe.image;
