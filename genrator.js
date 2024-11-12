@@ -168,6 +168,89 @@ const recipes = {
 
 
   ],
+  dinner: [
+    {
+      "title": "Pork Adobo",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmww5jTG0tVGxjPAoMtgYndRrcCm-NtAjyOQ&s",
+      "ingredients": [
+          "1 kg pork belly, cut into cubes",
+          "1/2 cup soy sauce",
+          "1/3 cup vinegar",
+          "4 cloves garlic, minced",
+          "1 onion, sliced",
+          "1 teaspoon black peppercorns",
+          "2 bay leaves",
+          "1 tablespoon brown sugar (optional)",
+          "1 tablespoon cooking oil",
+          "1 cup water"
+      ],
+      "instructions": "1. In a large bowl, marinate the pork with soy sauce, vinegar, and minced garlic for at least 30 minutes. 2. Heat the cooking oil in a pot over medium heat. Sauté the onions until softened, then add the marinated pork (reserve the marinade). Brown the pork on all sides. 3. Pour in the reserved marinade, water, peppercorns, bay leaves, and brown sugar (if using). Bring to a boil, then reduce the heat and simmer for 40-50 minutes, or until the pork is tender and the sauce has reduced to a rich consistency. 4. Serve hot with steamed rice and enjoy your Pork Adobo!"
+  },{
+    "title": "Kaldereta",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1eSOHxCPTBO2Osj7SmysWj1cKwXzpR4JcDA&s",
+    "ingredients": [
+        "1 kg beef (chuck or shank), cut into cubes",
+        "2 tablespoons cooking oil",
+        "1 large onion, chopped",
+        "4 cloves garlic, minced",
+        "2 medium potatoes, peeled and cubed",
+        "1 large carrot, peeled and sliced",
+        "1 red bell pepper, sliced",
+        "1 cup tomato sauce",
+        "1/2 cup liver spread (optional, for authentic flavor)",
+        "1/4 cup soy sauce",
+        "1/4 cup vinegar",
+        "1/2 cup beef broth",
+        "1 teaspoon bay leaves",
+        "1/2 teaspoon peppercorns",
+        "1/2 cup green olives, pitted (optional)",
+        "1/4 cup green peas (optional)",
+        "Salt and pepper to taste"
+    ],
+    "instructions": "1. In a large pot, heat cooking oil over medium heat. Sauté the garlic and onion until softened. 2. Add the beef cubes and brown them on all sides. 3. Pour in the soy sauce and vinegar, stirring to combine. Let it cook for about 5-7 minutes, allowing the vinegar to evaporate. 4. Add the tomato sauce, liver spread, beef broth, bay leaves, and peppercorns. Bring to a boil, then lower the heat and simmer for 1.5 to 2 hours, or until the beef is tender. 5. Add the potatoes, carrots, and red bell pepper, cooking for an additional 10-15 minutes until the vegetables are tender. 6. If using, add the olives and green peas and cook for another 5 minutes. 7. Season with salt and pepper to taste. 8. Serve hot with steamed rice and enjoy your Kaldereta!"
+},{
+  "title": "Menudo",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQipQu0DUK2mtu8_-ljntXuPlXEhVe4UAlClw&s",
+  "ingredients": [
+      "500g pork belly, cut into small cubes",
+      "200g pork liver, cut into cubes",
+      "2 tablespoons cooking oil",
+      "1 onion, chopped",
+      "4 cloves garlic, minced",
+      "1 medium carrot, peeled and diced",
+      "2 medium potatoes, peeled and diced",
+      "1/2 cup tomato sauce",
+      "1/4 cup soy sauce",
+      "1/2 cup water or chicken broth",
+      "1 teaspoon bay leaves",
+      "1/4 cup green peas",
+      "1/4 cup red bell pepper, diced",
+      "1/4 cup raisins (optional)",
+      "Salt and pepper to taste",
+      "1/2 cup potatoes or sweet potatoes (optional, for added texture)"
+  ],
+  "instructions": "1. In a large pot, heat cooking oil over medium heat. Sauté garlic and onion until softened. 2. Add the pork belly cubes and cook until browned on all sides. 3. Add the pork liver and cook for an additional 2-3 minutes until browned. 4. Pour in the soy sauce and tomato sauce. Stir to coat the meat evenly. Let it cook for about 5 minutes. 5. Add the carrots, potatoes, and water (or chicken broth). Stir, bring to a boil, then lower the heat to simmer. Cover and cook for about 30 minutes, or until the meat and vegetables are tender. 6. Add the bay leaves, green peas, red bell pepper, and raisins (if using). Simmer for another 5-10 minutes. 7. Season with salt and pepper to taste. 8. Serve hot with steamed rice. Enjoy your Menudo!"
+},
+{
+  "title": "Chicken Adobo",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_FrJH734ao1NFJqgBMFUyWKsgHEpn0Nz0g&s",
+  "ingredients": [
+      "1 kg chicken pieces (drumsticks or thighs)",
+      "1/2 cup soy sauce",
+      "1/3 cup vinegar",
+      "4 cloves garlic, minced",
+      "1 onion, sliced",
+      "1 teaspoon black peppercorns",
+      "2 bay leaves",
+      "1 tablespoon brown sugar (optional)",
+      "1 tablespoon cooking oil",
+      "1 cup water"
+  ],
+  "instructions": "1. In a large bowl, marinate the chicken with soy sauce, vinegar, and minced garlic for at least 30 minutes. 2. Heat the cooking oil in a pot over medium heat. Sauté the onions until softened, then add the marinated chicken (reserve the marinade). Brown the chicken on all sides. 3. Pour in the reserved marinade, water, peppercorns, bay leaves, and brown sugar (if using). Bring to a boil, then reduce the heat and simmer for 30-40 minutes, or until the chicken is tender and the sauce has reduced. 4. Serve hot with steamed rice and enjoy your Chicken Adobo!"
+}
+
+
+  ],
   side: [
       {
           title: "Garlic Bread",
