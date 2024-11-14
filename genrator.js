@@ -1,4 +1,4 @@
-// Sample data for recipes categorized by meal type
+// data of recipe stored in json
 const recipes = {
   breakfast: [
     {
@@ -378,15 +378,19 @@ const recipes = {
   ]
 };
 
-// generate random recipe once you cllick category
+// Generate a random recipe based to the user category
 function getRandomRecipe(category) {
   const categoryRecipes = recipes[category];
+  if (!categoryRecipes) return null;
   const randomIndex = Math.floor(Math.random() * categoryRecipes.length);
   return categoryRecipes[randomIndex];
 }
 
- //para ma update ui
 function displayRecipe(recipe) {
+  if (!recipe) {
+    alert("No recipes available for this category.");
+    return;
+  }
   document.getElementById("recipe-title").textContent = recipe.title;
   document.getElementById("recipe-image").src = recipe.image;
   document.getElementById("recipe-ingredients").innerHTML = recipe.ingredients
@@ -395,38 +399,18 @@ function displayRecipe(recipe) {
   document.getElementById("recipe-instructions").textContent = recipe.instructions;
 }
 
-// Event listeners for meal type buttons
-document.getElementById("breakfast").addEventListener("click", () => {
-  const recipe = getRandomRecipe("breakfast");
-  displayRecipe(recipe);
+// Event listener for the "Generate Recipe" button
+document.getElementById("generate-btn").addEventListener("click", () => {
+  const category = document.getElementById("recipe-category").value;
+  if (category) {
+    const recipe = getRandomRecipe(category);
+    displayRecipe(recipe);
+  } else {
+    alert("Please select a recipe category.");
+  }
 });
 
-document.getElementById("lunch").addEventListener("click", () => {
-  const recipe = getRandomRecipe("lunch");
-  displayRecipe(recipe);
-});
-
-document.getElementById("dinner").addEventListener("click", () => {
-  const recipe = getRandomRecipe("dinner");
-  displayRecipe(recipe);
-});
-
-document.getElementById("side").addEventListener("click", () => {
-  const recipe = getRandomRecipe("side");
-  displayRecipe(recipe);
-});
-
-document.getElementById("dessert").addEventListener("click", () => {
-  const recipe = getRandomRecipe("dessert");
-  displayRecipe(recipe);
-});
-
-document.getElementById("snack").addEventListener("click", () => {
-  const recipe = getRandomRecipe("snack");
-  displayRecipe(recipe);
-});
-
-// Surprise me button functionality
+// "Surprise Me" button functionality
 document.getElementById("surprise").addEventListener("click", () => {
   const categories = Object.keys(recipes);
   const randomCategory = categories[Math.floor(Math.random() * categories.length)];
