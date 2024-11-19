@@ -6,9 +6,9 @@
     <title>Random Recipe Generator</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-no-repeat bg-center bg-cover bg-[url('https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?cs=srgb&dl=pexels-goumbik-616401.jpg&fm=jpg')] ">
 
-    <div class="container mx-auto p-6">
+    <div class="container mx-auto p-6 ">
         <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">Random Recipe Generator</h1>
         
         <!-- Dropdown for selecting recipe category -->
@@ -31,13 +31,13 @@
             <button id="surprise" class="px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-md">Surprise Me</button>
         </div>
 
-        <div id="recipe" class="h-screen overflow-auto bg-white p-6 rounded-lg shadow-md">
-            <h2 id="recipe-title" class="text-2xl font-semibold mb-4 text-gray-800"></h2>
+        <div id="recipe" class="h-screen overflow-auto bg-white p-6 rounded-lg shadow-md bg-cover" style="background-image: url('https://m.media-amazon.com/images/I/71+K1pas+GL._AC_UF894,1000_QL80_.jpg'); background-repeat: no-repeat;">
+            <h2 id="recipe-title" class="text-2xl font-semibold mb-4 text-white"></h2>
             <img id="recipe-image" class="h-100% w-100% object-cover rounded-md mb-4" alt="">
-            <h3 class="font-semibold text-gray-700">Ingredients:</h3>
-            <ul id="recipe-ingredients" class="list-disc pl-6 mb-4 text-gray-700"></ul>
-            <h3 class="font-semibold text-gray-700">Instructions:</h3>
-            <p id="recipe-instructions" class="text-gray-700"></p>
+            <h3 class="font-semibold text-white">Ingredients:</h3>
+            <ul id="recipe-ingredients" class="list-disc pl-6 mb-4 text-white"></ul>
+            <h3 class="font-semibold text-white">Instructions:</h3>
+            <p id="recipe-instructions" class="text-white"></p>
         </div>
     </div>
 
