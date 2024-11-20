@@ -385,7 +385,7 @@ function getRandomRecipe(category) {
   const randomIndex = Math.floor(Math.random() * categoryRecipes.length);
   return categoryRecipes[randomIndex];
 }
-
+//For displaying the recipe
 function displayRecipe(recipe) {
   if (!recipe) {
     alert("No recipes available for this category.");
@@ -410,10 +410,14 @@ document.getElementById("generate-btn").addEventListener("click", () => {
   }
 });
 
-// "Surprise Me" button functionality
+// "Surprise Recipe 
+
 document.getElementById("surprise").addEventListener("click", () => {
+  //dito ma stored yung category
   const categories = Object.keys(recipes);
+  //ito naman ang pick ng category random pick sya
   const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+  //kapag meron na pick category na random punta naman sya sa function getrandomrecipe
   const recipe = getRandomRecipe(randomCategory);
   displayRecipe(recipe);
 });
